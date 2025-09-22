@@ -3,13 +3,14 @@
 
 ![Cisco Passing](https://img.shields.io/badge/Cisco-Passing-Green)
 
-<div style="text-align:center">
-
-![Présentation cisco-entreprise-fvrrmn](img/cisco-entreprise-fvrrmn.png)
-
-*Image protégée – Propriété exclusive*
-
+<div align="center">
+ 
+  <img src="img/cisco-entreprise-fvrrmn.png" alt="Présentation cisco-entreprise-fvrrmn">
+  
+  <p><em>Image protégée – Propriété exclusive</em></p>
+  
 </div>
+
 
 ## Introduction
 
@@ -38,6 +39,8 @@ Concevoir un réseau d’entreprise fonctionnel, sécurisé et évolutif, capabl
 
 ## 1. Tableau d'adressage IP
 
+<div align="center">
+
 | Équipement    | Interface | VLAN | IP             | Rôle                 |
 |:-------------:|:---------:|:----:|:--------------:|:--------------------:|
 | RT-Entreprise | G0/1.10   | 10   | 192.168.10.254 | Routeur – Serveurs   |
@@ -49,8 +52,11 @@ Concevoir un réseau d’entreprise fonctionnel, sécurisé et évolutif, capabl
 | Imprimante    | –         | 20   | 192.168.20.200 | Fixe                 |
 | PC Production | –         | 30   | DHCP           | Utilisateur          |
 
+</div>
 
 ## 2. Tableau des interconnexions
+
+<div align="center">
 
 | Équipement        | Port        | Connecté à      | Port        |
 |:-----------------:|:-----------:|:---------------:|:-----------:|
@@ -66,13 +72,15 @@ Concevoir un réseau d’entreprise fonctionnel, sécurisé et évolutif, capabl
 | SW-Production     | Fa0/1       | PC-Responsable  | Fa0         |
 | SW-Production     | Fa0/2       | PC-Technicien   | Fa0         |
 
+</div>
+
 ## 3. Schéma de l'infrastructure réseau
 
-<div style="text-align:center">
-
-![Schéma de l'infrastructure réseau](img/schema_fvrrmn.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/schema_fvrrmn.png" alt="Schéma de l'infrastructure réseau">
+  
+</p>
 
 ## 4. Configuration du routeur : RT-Entreprise
 
@@ -339,19 +347,20 @@ interface range G0/1-2
 
 Nous avons créé un pool d’adresses distinct pour chaque VLAN, garantissant que chaque segment réseau reçoive automatiquement des adresses IP dans sa plage dédiée. Cette configuration simplifie la gestion des adresses et réduit les risques de conflits.
 
-<div style="text-align:center">
 
-![Configuration SRV-DHCP](img/srv-dhcp.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/srv-dhcp.png" alt="Configuration SRV-DHCP">
+ 
+</p>
 
 Le serveur DNS interne a été configuré pour résoudre les noms des périphériques et des services internes, permettant aux utilisateurs d’accéder facilement aux ressources réseau sans mémoriser les adresses IP.
 
-<div style="text-align:center">
-
-![Configuration SRV-DNS](img/srv-dns.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/srv-dns.png" alt="Configuration SRV-DNS">
+  
+</p>
 
 ## 8. Mise en place du serveur Web
 
@@ -359,45 +368,46 @@ Le service HTTP a été volontairement mis hors service (Off), afin d’empêche
 
 Le service HTTPS a été activé (On), permettant ainsi aux utilisateurs d’accéder à l’interface Web via un canal chiffré TLS/SSL.
 
-<div style="text-align:center">
-
-![Configuration SRV-WEB](img/srv-web.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/srv-web.png" alt="Configuration SRV-WEB">
+  
+</p>
 
 ## 9. Tests de conformité
 
 Vérification de l’attribution automatique d’une adresse IP pour PC-Direction sur le VLAN 20. (Plage 10-100)
 
-<div style="text-align:center">
-
-![Attribution automatique d'une adresse IP](img/ipconfig-pc-direction.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/ipconfig-pc-direction.png" alt="Attribution automatique d'une adresse IP">
+  
+</p>
 
 Vérification de la résolution DNS pour accéder à l’imprimante par son nom.
 
-<div style="text-align:center">
 
-![Résolution d'un nom à l'aide du DNS](img/resolution-dns.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/resolution-dns.png" alt="Résolution d'un nom à l'aide du DNS">
+  
+</p>
 
 Vérification de l’accès au site Web interne via HTTPS.
 
-<div style="text-align:center">
-
-![Accès au site https://www.fvrrmn.fr](img/web-browser.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/web-browser.png" alt="Accès au site https://www.fvrrmn.fr">
+  
+</p>
 
 Vérification de l’accès SSH pour l’administration à distance.
 
-<div style="text-align:center">
-
-![Connexion à distance SSH](img/ssh-admin.png)
-
-</div>
+<p align="center">
+ 
+  <img src="img/ssh-admin.png" alt="Connexion à distance SSH">
+  
+</p>
 
 ## 10. Sécurité mise en place
 
@@ -412,5 +422,5 @@ Plusieurs mécanismes de protection ont été intégrés dès la conception du r
 ---
 
 <p align="center" style="margin-top:30px;">
-  <a href="#cisco-entreprise-fvrrmn" style="font-size:28px; text-decoration:none;">⬆️ Retour ⬆️</a>
+  <a href="#cisco-entreprise-fvrrmn" style="font-size:28px; text-decoration:none;">Retour</a>
 </p>
