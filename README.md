@@ -337,7 +337,7 @@ interface FastEthernet0/24
  shutdown
 ```
 
-Interface inutilisée, désactivée pour limiter les risques.
+Interfaces inutilisées, désactivées pour limiter les risques.
 ```Cisco
 interface range G0/1-2
  shutdown
